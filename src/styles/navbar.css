@@ -1,0 +1,15 @@
+.logo{
+    width: 10%;
+    margin-left: 1%;
+}
+/*li{
+    justify-content: space-between;
+    width: 100%;
+    padding: 2%;
+}*/
+.navbar{
+    justify-content: space-between;
+}
+.favorite{
+    justify-content: space-around;
+}

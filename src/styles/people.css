@@ -1,0 +1,18 @@
+#description{
+    width: 70%;
+    margin: auto;
+    padding: 2%;
+}
+#features{
+    text-align: center;
+    color: red;
+    margin: auto;
+    width: 70%;
+}
+.line{
+  height: 3px;
+  background-color: red;
+  margin: auto;
+  width: 70%;
+  margin-bottom: 1%;
+}

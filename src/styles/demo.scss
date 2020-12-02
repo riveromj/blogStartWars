@@ -1,0 +1,46 @@
+/*.row{
+    display: flex; 
+    justify-content: space-around;
+    flex-flow: wrap;
+}*/
+.scroll{
+      
+     display: flex; 
+     flex-direction: row;
+   
+     overflow-x:auto;
+    
+    
+}
+
+
+.card{
+    width: 20%;
+    display: inline-block;
+    margin:auto;
+    margin-top: 1%;
+    margin-right: 1%;
+    padding: 1%;   
+        
+}
+
+h1{
+    color: rgb(129, 20, 20);
+}
+
+.pointer {cursor: pointer;}
+.more{
+    text-align: left;
+}
+.heart{
+    text-align: right;
+}
+
+ul:empty:before{
+    text-align: center;
+    padding: 1%;
+    content: 'Empty';
+
+}
+
+
