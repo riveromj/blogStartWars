@@ -12,15 +12,19 @@ export const People = props => {
 		<div className="cointainer-fluid">
 			<div className="row" id="description">
 				<div className="col-6 character">
-					<img
-						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-YtlIW6hAVM_U9KD2gsNV5KFgNuv1moG9Fw&usqp=CAU"
-						className="card-img-top"
-						alt="..."
-					/>
+					<img src="https://dummyimage.com/800x600/000/fff" className="card-img-top" alt="..." />
 				</div>
 				<div className="col-6 ">
 					<h1 className="title">{people.name}</h1>
-					<p>character description</p>
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+						the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of
+						type and scrambled it to make a type specimen book. It has survived not only five centuries, but
+						also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+						in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+						recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+						Ipsum.
+					</p>
 				</div>
 			</div>
 			<hr className="line" />

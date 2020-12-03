@@ -13,11 +13,7 @@ export const Demo = () => {
 				{store.person.map((people, index) => {
 					return (
 						<div className="card scrollchild" key={index}>
-							<img
-								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-YtlIW6hAVM_U9KD2gsNV5KFgNuv1moG9Fw&usqp=CAU"
-								className="card-img-top"
-								alt="..."
-							/>
+							<img src="https://dummyimage.com/400x200/000/fff" className="card-img-top" alt="..." />
 							<div className="card-body ">
 								<h5 className="card-title">{people.name}</h5>
 								<h6>Gender: {people.gender}</h6>
@@ -62,11 +58,7 @@ export const Demo = () => {
 				{store.planets.map((planet, index) => {
 					return (
 						<div className="card" key={index}>
-							<img
-								src="https://cdn.shopify.com/s/files/1/0101/2792/products/Under_Construction_copy_600x600_crop_center.jpg?v=1569104295"
-								className="card-img-top"
-								alt="..."
-							/>
+							<img src="https://dummyimage.com/400x200/000/fff" className="card-img-top" alt="..." />
 							<div className="card-body">
 								<h5 className="card-title">{planet.name}</h5>
 								<h6 className="card-subtitle mb-2 text-muted">Terrain: {planet.terrain}</h6>

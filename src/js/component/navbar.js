@@ -6,6 +6,7 @@ import { Context } from "../store/appContext";
 
 //////
 import { DropdownButton, Dropdown } from "react-bootstrap";
+import Badge from "react-bootstrap/Badge";
 
 export const Navbar = () => {
 	const { store, actions } = useContext(Context);
@@ -15,7 +16,7 @@ export const Navbar = () => {
 				<img className="logo" src="https://1000marcas.net/wp-content/uploads/2019/12/Star-Wars-Logo.png" />
 			</Link>
 
-			<DropdownButton id="dropdown-item-button" title="Dropdown">
+			<DropdownButton id="dropdown-item-button" title={" Favorite " + store.favorite.length}>
 				{store.favorite.length > 0 ? (
 					store.favorite.map((favorite, index) => {
 						return (
