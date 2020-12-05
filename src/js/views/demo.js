@@ -34,7 +34,7 @@ export const Demo = () => {
 										<button className="btn btn-outline-secondary">
 											{store.favorite.includes(people.name) ? (
 												<i
-													className="far fa-heart pointer heart activated"
+													className="fas fa-heart activated"
 													onClick={() => {
 														actions.addFavorite(people.name);
 														store.favorite.map((favorite, index) => {
@@ -87,7 +87,7 @@ export const Demo = () => {
 									<h5 className="card-title">{planet.name}</h5>
 									<h6 className="card-subtitle mb-2 text-muted">Terrain: {planet.terrain}</h6>
 									<p className="card-text">Population: {planet.population}</p>
-									<div className="row justify-content-between">
+									<div className="botones">
 										<Link
 											to={{
 												pathname: "/planet",
@@ -97,7 +97,40 @@ export const Demo = () => {
 											}}>
 											<button className="btn btn-outline-secondary more">Card Link!</button>
 										</Link>
-										<i className="far fa-heart" />
+										{store.favorite.includes(planet.name) ? (
+											<i
+												className="fas fa-heart pointer activated"
+												onClick={() => {
+													actions.addFavorite(planet.name);
+													store.favorite.map((favorite, index) => {
+														//console.log(favorite, index);
+														return (
+															<div key={index}>
+																<ul className="list-group">
+																	<li className="list-group-item">{favorite}</li>
+																</ul>
+															</div>
+														);
+													});
+												}}
+											/>
+										) : (
+											<i
+												className="far fa-heart pointer heart"
+												onClick={() => {
+													actions.addFavorite(planet.name);
+													store.favorite.map((favorite, index) => {
+														return (
+															<div key={index}>
+																<ul className="list-group">
+																	<li className="list-group-item">{favorite}</li>
+																</ul>
+															</div>
+														);
+													});
+												}}
+											/>
+										)}
 									</div>
 								</div>
 							</div>
