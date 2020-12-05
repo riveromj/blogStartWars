@@ -5,13 +5,13 @@
 }
 #features{
     text-align: center;
-    color: red;
+    color: rgb(129, 20, 20);
     margin: auto;
     width: 70%;
 }
 .line{
   height: 3px;
-  background-color: red;
+  background-color: rgb(129, 20, 20);
   margin: auto;
   width: 70%;
   margin-bottom: 1%;

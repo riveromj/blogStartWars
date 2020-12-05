@@ -1,27 +1,20 @@
-/*.row{
-    display: flex; 
-    justify-content: space-around;
-    flex-flow: wrap;
-}*/
-.scroll{
-      
-     display: flex; 
-     flex-direction: row;
-   
-     overflow-x:auto;
-    
-    
+
+.row{  
+     
+     flex-wrap: nowrap;
+     overflow-x:auto; 
 }
-
-
 .card{
-    width: 20%;
-    display: inline-block;
+    width: 400px;
+   // display: inline-block;
     margin:auto;
     margin-top: 1%;
-    margin-right: 1%;
-    padding: 1%;   
-        
+    margin-right: 15px;
+           
+}
+.botones{
+    display: flex;
+    justify-content: space-between;
 }
 
 h1{
@@ -35,12 +28,10 @@ h1{
 .heart{
     text-align: right;
 }
-
-ul:empty:before{
-    text-align: center;
-    padding: 1%;
-    content: 'Empty';
-
+.activated{
+    color: red;
 }
+
+
 
 

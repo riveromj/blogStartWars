@@ -9,6 +9,7 @@ import { Footer } from "./component/footer";
 
 ///componente de people
 import { People } from "./views/people";
+import { Planet } from "./views/planet";
 
 //create your first component
 const Layout = () => {
@@ -24,6 +25,7 @@ const Layout = () => {
 					<Switch>
 						<Route exact path="/" component={Demo} />
 						<Route exact path="/people" component={People} />
+						<Route exact path="/planet" component={Planet} />
 						<Route>
 							<h1>Not found!</h1>
 						</Route>

@@ -1,10 +1,11 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			planets: [],
-			person: [],
-			people: [],
-			favorite: []
+			planets: [], //data de todos los planetas
+			planet: [], // contenido sde un planeta
+			person: [], //data de todo los presonajes
+			people: [], //contenido de un solo personaje
+			favorite: [] //list favorite
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -22,6 +23,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.then(data => setStore({ person: data.results }))
 					.catch(err => console.log("Err", err));
 			},
+
 			addFavorite: item => {
 				const store = getStore();
 				const validate = store.favorite.includes(item);
